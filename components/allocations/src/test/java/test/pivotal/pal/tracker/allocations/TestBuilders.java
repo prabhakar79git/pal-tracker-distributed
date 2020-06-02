@@ -7,11 +7,14 @@ import io.pivotal.pal.tracker.allocations.data.AllocationRecord;
 
 import java.time.LocalDate;
 
+import org.junit.Ignore;
+
 import static io.pivotal.pal.tracker.allocations.AllocationForm.allocationFormBuilder;
 import static io.pivotal.pal.tracker.allocations.AllocationInfo.allocationInfoBuilder;
 import static io.pivotal.pal.tracker.allocations.data.AllocationFields.allocationFieldsBuilder;
 import static io.pivotal.pal.tracker.allocations.data.AllocationRecord.allocationRecordBuilder;
 
+@Ignore
 public class TestBuilders {
 
     public static AllocationRecord.Builder testAllocationRecordBuilder() {

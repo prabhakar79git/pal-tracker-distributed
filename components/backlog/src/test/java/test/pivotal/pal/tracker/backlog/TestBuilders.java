@@ -10,6 +10,8 @@ import static io.pivotal.pal.tracker.backlog.StoryInfo.storyInfoBuilder;
 import static io.pivotal.pal.tracker.backlog.data.StoryFields.storyFieldsBuilder;
 import static io.pivotal.pal.tracker.backlog.data.StoryRecord.storyRecordBuilder;
 
+import org.junit.Ignore;
+@Ignore
 public class TestBuilders {
 
     public static StoryRecord.Builder testStoryRecordBuilder() {

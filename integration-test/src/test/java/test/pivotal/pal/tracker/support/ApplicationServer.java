@@ -5,16 +5,29 @@ import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.Map;
 
+import org.junit.Ignore;
+import org.junit.Test;
+
 import static org.assertj.core.api.Assertions.fail;
 import static test.pivotal.pal.tracker.support.MapBuilder.envMapBuilder;
-
+@Ignore
 public class ApplicationServer {
 
     private final String jarPath;
     private final String port;
 
     private Process serverProcess;
+    
+    public ApplicationServer() {
+       
+    	 this.jarPath = "";
+         this.port = "";
+    }
 
+    @Test
+    public void dummyTest(){
+    	
+    }
     public ApplicationServer(String jarPath, String port) {
         this.jarPath = jarPath;
         this.port = port;

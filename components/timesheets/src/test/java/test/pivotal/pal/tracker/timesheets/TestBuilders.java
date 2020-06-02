@@ -7,11 +7,13 @@ import io.pivotal.pal.tracker.timesheets.data.TimeEntryRecord;
 
 import java.time.LocalDate;
 
+import org.junit.Ignore;
+
 import static io.pivotal.pal.tracker.timesheets.TimeEntryForm.timeEntryFormBuilder;
 import static io.pivotal.pal.tracker.timesheets.TimeEntryInfo.timeEntryInfoBuilder;
 import static io.pivotal.pal.tracker.timesheets.data.TimeEntryFields.timeEntryFieldsBuilder;
 import static io.pivotal.pal.tracker.timesheets.data.TimeEntryRecord.timeEntryRecordBuilder;
-
+@Ignore
 public class TestBuilders {
 
     public static TimeEntryRecord.Builder testTimeEntryRecordBuilder() {

@@ -10,6 +10,8 @@ import static io.pivotal.pal.tracker.projects.ProjectInfo.projectInfoBuilder;
 import static io.pivotal.pal.tracker.projects.data.ProjectFields.projectFieldsBuilder;
 import static io.pivotal.pal.tracker.projects.data.ProjectRecord.projectRecordBuilder;
 
+import org.junit.Ignore;
+@Ignore
 public class TestBuilders {
 
     public static ProjectRecord.Builder testProjectRecordBuilder() {

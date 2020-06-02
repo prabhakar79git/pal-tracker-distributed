@@ -6,12 +6,19 @@ import okhttp3.*;
 import java.io.IOException;
 import java.util.Map;
 
+import org.junit.Ignore;
+
+@Ignore
 public class HttpClient {
 
     private static final MediaType JSON = MediaType.parse("application/json");
 
     private final OkHttpClient okHttp = new OkHttpClient();
     private final ObjectMapper objectMapper = new ObjectMapper();
+    
+ public HttpClient() {
+	// TODO Auto-generated constructor stub
+}
 
 
     public Response get(String url) {
