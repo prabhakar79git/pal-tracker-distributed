@@ -1,14 +1,19 @@
 package test.pivotal.pal.tracker.support;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import okhttp3.*;
-
 import java.io.IOException;
 import java.util.Map;
 
-import org.junit.Ignore;
+import org.junit.Test;
 
-@Ignore
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.ResponseBody;
+
+
 public class HttpClient {
 
     private static final MediaType JSON = MediaType.parse("application/json");
@@ -16,10 +21,12 @@ public class HttpClient {
     private final OkHttpClient okHttp = new OkHttpClient();
     private final ObjectMapper objectMapper = new ObjectMapper();
     
- public HttpClient() {
-	// TODO Auto-generated constructor stub
-}
+ 
 
+ @Test 
+ public void dummyTest() {
+	 
+ }
 
     public Response get(String url) {
         return fetch(new Request.Builder().url(url));

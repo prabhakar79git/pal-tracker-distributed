@@ -5,7 +5,7 @@ import java.util.Map;
 
 import org.junit.Ignore;
 import org.junit.Test;
-@Ignore
+
 public class MapBuilder<K, V> {
 
     private Map<K, V> map = new HashMap<>();
