@@ -19,6 +19,8 @@ dependencies {
     compile "com.zaxxer:HikariCP:$hikariVersion"
     compile "mysql:mysql-connector-java:$mysqlVersion"
     compile "ch.qos.logback:logback-classic:$logbackVersion"
+    
+    
 
     testCompile project(":components:test-support")
        
