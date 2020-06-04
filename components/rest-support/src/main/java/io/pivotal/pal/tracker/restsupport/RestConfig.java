@@ -13,11 +13,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @Configuration
 public class RestConfig {
 
-    @Bean
-    @LoadBalanced
-    public RestOperations restOperations() {
-        return new RestTemplate();
-    }
+   
 
     @Bean
     public ObjectMapper objectMapper() {
